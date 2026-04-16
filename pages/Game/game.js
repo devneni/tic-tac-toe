@@ -19,7 +19,7 @@ const winningConditions = [
     [0,4,8],[2,4,6]
 ];
 
-// 🔥 ATUALIZA MENSAGEM COM COR
+
 function updateMessage() {
     message.textContent = `Vez do jogador ${currentPlayer}`;
 
@@ -90,7 +90,6 @@ function checkResult() {
         if (gameState[a] === gameState[b] && gameState[b] === gameState[c]) {
             roundWon = true;
 
-            // 🎉 animação nas células vencedoras
             cells[a].classList.add('win');
             cells[b].classList.add('win');
             cells[c].classList.add('win');
